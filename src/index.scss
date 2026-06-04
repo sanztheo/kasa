@@ -84,3 +84,14 @@ button {
 main.container {
   flex: 1;
 }
+
+// Accessibilité : on coupe les animations (Collapse, chevrons…) pour les
+// utilisateurs qui préfèrent réduire les mouvements.
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
