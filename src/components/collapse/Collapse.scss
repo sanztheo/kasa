@@ -80,27 +80,27 @@
 @media (max-width: 768px) {
   .collapse {
     &__header {
-      height: 30px;
-      padding: 0 12px;
+      height: 42px;
+      padding: 0 18px;
     }
 
     &__title {
-      font-size: 13px;
+      font-size: 16px;
     }
 
     &__chevron {
-      width: 16px;
-      height: 16px;
+      width: 18px;
+      height: 18px;
     }
 
     &__inner {
-      padding: 14px 12px;
-      font-size: 12px;
+      padding: 18px 16px;
+      font-size: 14px;
     }
 
     &--detail .collapse__title,
     &--detail .collapse__inner {
-      font-size: 12px;
+      font-size: 14px;
     }
   }
 }
