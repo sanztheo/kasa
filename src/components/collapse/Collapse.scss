@@ -1,0 +1,106 @@
+.collapse {
+  &__header {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    height: 52px;
+    padding: 0 20px;
+    background: var(--coral);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius-sm);
+    text-align: left;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  &__chevron {
+    flex: none;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+  }
+
+  // Animation de hauteur : 0fr (fermé) -> 1fr (ouvert)
+  &__panel {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease;
+  }
+
+  // Item de grille : aucun padding ici, sinon hauteur résiduelle incompressible
+  // (le padding ne se replie pas) -> il vit sur __inner.
+  &__content {
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  &__inner {
+    background: var(--grey-bg);
+    color: var(--grey-text);
+    border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.45;
+  }
+
+  &__equipments li {
+    margin-bottom: 4px;
+  }
+
+  &--open {
+    .collapse__panel {
+      grid-template-rows: 1fr;
+    }
+
+    .collapse__chevron {
+      transform: rotate(180deg);
+    }
+  }
+
+  // Variante compacte pour la fiche logement
+  &--detail {
+    .collapse__title {
+      font-size: 18px;
+    }
+
+    .collapse__inner {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .collapse {
+    &__header {
+      height: 30px;
+      padding: 0 12px;
+    }
+
+    &__title {
+      font-size: 13px;
+    }
+
+    &__chevron {
+      width: 16px;
+      height: 16px;
+    }
+
+    &__inner {
+      padding: 14px 12px;
+      font-size: 12px;
+    }
+
+    &--detail .collapse__title,
+    &--detail .collapse__inner {
+      font-size: 12px;
+    }
+  }
+}
