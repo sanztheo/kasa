@@ -1,0 +1,20 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 115px;
+  padding: 5px 20px;
+  background: var(--coral);
+  color: var(--white);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .tag {
+    min-width: 84px;
+    padding: 4px 14px;
+    font-size: 12px;
+  }
+}

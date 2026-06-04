@@ -1,0 +1,25 @@
+.rating {
+  display: inline-flex;
+  gap: 10px;
+
+  &__star {
+    width: 36px;
+    height: 36px;
+    fill: var(--star-empty);
+
+    &--on {
+      fill: var(--coral);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .rating {
+    gap: 5px;
+
+    &__star {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
