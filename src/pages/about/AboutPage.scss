@@ -1,0 +1,14 @@
+.about {
+  max-width: 1023px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .about {
+    margin: 22px auto;
+    gap: 20px;
+  }
+}
