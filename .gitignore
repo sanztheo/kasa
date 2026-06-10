@@ -22,9 +22,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-# Local working files (maquettes, notes) — not part of the delivery
-figma/
-tasks/
-Étapes.md
-.playwright-mcp/

@@ -1,0 +1,7 @@
+Projet : Kasa - Application web de location immobiliere avec React
+Etudiant : Sanz Theo
+Parcours : Developpeur d'application JavaScript React (OpenClassrooms)
+Date de demarrage du projet : 05/2026
+
+Lien du depot GitHub contenant l'ensemble du code de l'application :
+https://github.com/sanztheo/kasa
