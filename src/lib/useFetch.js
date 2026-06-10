@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 /**
- * Récupère du JSON statique (notre « back-end » = fichiers dans public/data).
+ * Récupère du JSON statique 
  * Gère les états de chargement et d'erreur, et ignore les réponses obsolètes
  * si l'URL change avant la fin de la requête.
  */
